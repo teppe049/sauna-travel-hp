@@ -1,113 +1,119 @@
 import Image from "next/image";
+import { ContactForm } from "./components/Contact/ContactForm";
+import NewsList from "./components/News/NewsList";
+import { News } from "./models/News";
+
+const data: {
+  contents: News[]
+} = {
+  contents: [
+    {
+      id: "1",
+      title: "初めて記事作成",
+      category: {
+        name: "お知らせ"
+      },
+      pulishedAt: "2024/05/09"
+    },
+    {
+      id: "2",
+      title: "当社のCEOが",
+      category: {
+        name: "お知らせ"
+      },
+      pulishedAt: "2024/05/19"
+    },
+    {
+      id: "3",
+      title: "テスト記事ですテスト記事ですテスト記事ですテスト記事ですテスト記事ですテスト記事です",
+      category: {
+        name: "お知らせ"
+      },
+      pulishedAt: "2024/04/09"
+    },
+  ]
+}
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <section className="relative flex items-center justify-center text-white overflow-hidden py-[200px]">
+        <div>
+          <h1 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[1rem]" >サウナを旅の主役にする</h1>
+          <Image className="mx-auto" src="/img-logo.png" alt="" width={250} height={250} />
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section>
+        <div>
+          <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[1rem]" >News</h2>
+          <div className="text-center">
+            <NewsList news={data.contents} />
+          </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        </div>
+      </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]">
+        <div className="px-40">
+          <p className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[2rem]" >Vision</p>
+          <p className="text-neutral-950 font-bold font-serif text-4xl text-center mb-[2rem]" >サウナを旅の主役にする</p>
+          <p className="text-neutral-950 font-sans text-base text-left mb-[2rem]">
+            日本において、私たちが生まれてから今日に至るまでの期間は「失われた30年」と呼ばれ、希望も可能性も未来もないような暗い雰囲気が漂っています。<br />
+            <br />
+            しかし、私たちが日本全国を旅する中で、今まで知らなかっただけの、魅力的な土地や人、食事、自然などがたくさんありました。<br />
+            <br />
+            私たちはこうしたポテンシャルを秘めた「魅力」を「火種」と呼びます。<br />
+            <br />
+            そうした「火種」を大切に大きくしていく、そしてゆくゆくは「火種」を自らつくり出していく。
+            これが、私たちのミッションです。<br />
+            <br />
+            全国各地で「火種」が生まれ続ければ、人の流動性が高まり、日本全体が明るく、アツくなると思っています。</p>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <section className="mb-10">
+        <div>
+          <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[150px]" >Who We Are</h2>
+          <div className="flex items-center px-40 ">
+            <Image className="mx-6 border-8 border-cyan-450 rounded-lg" src="/introduction.jpg" alt="" width={250} height={250} />
+            <p>
+              1998年7月6日生まれ。広島県呉市出身。<br />
+              2021年 東京理科大学 理工学部 応用生物科学科卒業<br />
+              2023年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 修了<br />
+              2023年 外資系コンサルティング会社に、データアナリストとして新卒で入社。<br />
+              <br />
+              大学時代は、体育会の少林寺拳法部に所属し、総勢39名の主将としてチーム運営を行う。全国大会への出場経験あり。<br />
+              また、サウナ施設を紹介するSNSを立ち上げ、複数のサウナ施設のマーケティング支援に携わる。(現フォロワー数4.2万人)<br />
+              入社後は、通信業界をメインに生成AIの新規事業開発や、PythonやSQLを用いての顧客分析案件に携わる。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <div className="text-neutral-950 font-bold font-serif text-3xl text-center py-[200px]">Overview</div>
+          <div className="">
+
+          </div>
+
+        </div>
+      </section>
+
+      <section className="my-[100px] py-24  bg-slate-100">
+        <div>
+          <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[1rem]" >Contuct Us</h2>
+          <p className="text-center py-4">弊社へのお問い合わせはこちらよりお願いいたします。<br />
+            <br />
+            ２営業日以内にご返信させていただきます。</p>
+          <ContactForm />
+        </div>
+      </section>
+    </>
   );
 }
+
+
