@@ -76,9 +76,9 @@ export default function Home() {
       <section className="mb-10">
         <div>
           <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[150px]" >Who We Are</h2>
-          <div className="flex items-center px-40 ">
-            <Image className="mx-6 border-8 border-cyan-450 rounded-lg" src="/introduction.jpg" alt="" width={250} height={250} />
-            <p>
+          <div className="lg:flex flex-row items-center px-40 ">
+            <Image className="lg:mx-6 mx-auto border-8 border-cyan-450 rounded-lg" src="/introduction.jpg" alt="" width={250} height={250} />
+            <p className="mt-4 lg:mt-0">
               1998年7月6日生まれ。広島県呉市出身。<br />
               2021年 東京理科大学 理工学部 応用生物科学科卒業<br />
               2023年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 修了<br />
@@ -86,7 +86,9 @@ export default function Home() {
               <br />
               大学時代は、体育会の少林寺拳法部に所属し、総勢39名の主将としてチーム運営を行う。全国大会への出場経験あり。<br />
               また、サウナ施設を紹介するSNSを立ち上げ、複数のサウナ施設のマーケティング支援に携わる。(現フォロワー数4.2万人)<br />
-              入社後は、通信業界をメインに生成AIの新規事業開発や、PythonやSQLを用いての顧客分析案件に携わる。
+              入社後は、通信業界をメインに生成AIの新規事業開発や、PythonやSQLを用いての顧客分析案件に携わる。<br />
+              <br />
+              代表  濵中俊哉
             </p>
           </div>
 
