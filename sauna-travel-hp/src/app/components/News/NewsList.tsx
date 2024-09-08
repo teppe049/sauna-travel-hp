@@ -1,4 +1,5 @@
 import { News } from "@/app/models/News"
+import Image from "next/image"
 
 
 type Props = {
@@ -11,15 +12,22 @@ export default function NewsList({ news }: Props) {
             <ul className="px-[100px]">
                 {news.map((article) => (
 
-                    <li key={article.id} className=" border-b py-6 ml-8" >
-                        <div className="flex flex-row items-center px-2" >
-                            <p className="text-zinc-500 text-left ">{article.pulishedAt}</p>
-                            <div className="px-5">
-                                <p className="border border-zinc-300 text-zinc-500 rounded-3xl text-center px-10 py-1">{article.category.name}</p>
+                    <li key={article.id} className="border-b ml-8" >
+                        <div className="flex flex-row gap-10 py-6">
+                            <Image
+                                className="w-24 h-24 rounded"
+                                src={"/introduction.jpg"}
+                                alt="No Image"
+                                width={480}
+                                height={430}
+                            />
+                            <div className="flex flex-col text-justify">
+                                <p className="basis-4/5 text-lg font-bold text-start mb-2">{article.title}</p>
+                                <p className="basis-1/5 text-bases text-start ">{article.pulishedAt}</p>
                             </div>
-                            <p className="text-left ml-3 flex-wrap">{article.title}</p>
                         </div>
                     </li>
+
                 ))}
             </ul>
         </>
