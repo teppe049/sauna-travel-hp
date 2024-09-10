@@ -9,7 +9,7 @@ type Props = {
 export default function NewsList({ news }: Props) {
     return (
         <>
-            <ul className="px-14">
+            <ul className="px-4 lg:px-14">
                 {news.map((article) => (
 
                     <li key={article.id} className="border-b ml-8" >
