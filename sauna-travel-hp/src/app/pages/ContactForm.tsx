@@ -1,13 +1,45 @@
+'use client';
+import { useRef } from "react"
+
+
+
 export function ContactForm() {
+    const nameRef = useRef<HTMLInputElement>(null)
+    const companyRef = useRef<HTMLInputElement>(null)
+    const emailRef = useRef<HTMLInputElement>(null)
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        console.log("メール送信");
+
+        let data = {
+            name: nameRef.current?.value,
+            company: companyRef.current?.value,
+            email: emailRef.current?.value
+        }
+
+        console.log(data)
+
+        await fetch("/api/contact", {
+            method: "POST",
+            headers: {
+                Accept: "application/json, text/plain",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        }).then((res) => {
+            if (res.status === 200) console.log("メース送信成功");
+        });
+    }
+
     return (
         <>
-            <form className="max-w-[600px] mx-auto px-4">
+            <form className="max-w-[600px] mx-auto" onSubmit={(e) => handleSubmit(e)}>
                 <div className="flex justify-start items-center w-full gap-[24px]">
                     <div className="flex flex-col flex-1 py-2 px-0">
                         <label className="text-sm" htmlFor="fullname">
                             お名前
                         </label>
-                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="lastname" name="lastname" />
+                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="lastname" name="lastname" required ref={nameRef} />
                     </div>
                 </div>
                 <div className="flex justify-start items-center w-full gap-[24px]">
@@ -15,7 +47,7 @@ export function ContactForm() {
                         <label htmlFor="companyname">
                             会社名
                         </label>
-                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="companyname" name="companyname" />
+                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="companyname" name="companyname" required ref={companyRef} />
                     </div>
                 </div>
                 <div className="flex justify-start items-center w-full gap-[24px]">
@@ -23,7 +55,7 @@ export function ContactForm() {
                         <label htmlFor="mailaddress">
                             メールアドレス
                         </label>
-                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="mailaddress" name="mailaddress" />
+                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="mailaddress" name="mailaddress" required ref={emailRef} />
                     </div>
                 </div>
                 <div className="flex justify-start items-center w-full gap-[24px]">
