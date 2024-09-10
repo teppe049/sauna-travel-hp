@@ -55,7 +55,7 @@ export default function Home() {
       </section>
 
       <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]">
-        <div className="px-40">
+        <div className="px-4 lg:px-40">
           <p className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[2rem]" >Vision</p>
           <p className="text-neutral-950 font-bold font-serif text-4xl text-center mb-[2rem]" >サウナを旅の主役にする</p>
           <p className="text-neutral-950 font-sans text-base text-left mb-[2rem]">
@@ -76,7 +76,7 @@ export default function Home() {
       <section className="mb-10">
         <div>
           <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[150px]" >Who We Are</h2>
-          <div className="lg:flex flex-row items-center px-40 ">
+          <div className="lg:flex flex-row items-center px-4 lg:px-40px-40 ">
             <Image className="lg:mx-6 mx-auto border-8 border-cyan-450 rounded-lg" src="/introduction.jpg" alt="" width={250} height={250} />
             <p className="mt-4 lg:mt-0">
               1998年7月6日生まれ。広島県呉市出身。<br />

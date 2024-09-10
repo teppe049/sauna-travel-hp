@@ -1,7 +1,7 @@
 export function ContactForm() {
     return (
         <>
-            <form className="max-w-[600px] mx-auto">
+            <form className="max-w-[600px] mx-auto px-4">
                 <div className="flex justify-start items-center w-full gap-[24px]">
                     <div className="flex flex-col flex-1 py-2 px-0">
                         <label className="text-sm" htmlFor="fullname">
