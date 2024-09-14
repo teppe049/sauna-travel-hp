@@ -7,6 +7,8 @@ export function ContactForm() {
     const nameRef = useRef<HTMLInputElement>(null)
     const companyRef = useRef<HTMLInputElement>(null)
     const emailRef = useRef<HTMLInputElement>(null)
+    const phoneRef = useRef<HTMLInputElement>(null)
+    const contentRef = useRef<HTMLInputElement>(null)
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("メール送信");
@@ -14,7 +16,9 @@ export function ContactForm() {
         let data = {
             name: nameRef.current?.value,
             company: companyRef.current?.value,
-            email: emailRef.current?.value
+            email: emailRef.current?.value,
+            phone: phoneRef.current?.value,
+            content: contentRef.current?.value
         }
 
         console.log(data)
@@ -63,15 +67,21 @@ export function ContactForm() {
                         <label htmlFor="phonenumber">
                             電話番号
                         </label>
-                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="phonenumber" name="phonenumber" />
+                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="phonenumber" name="phonenumber" required ref={phoneRef} />
                     </div>
                 </div>
-                <div className="flex justify-start items-center w-full gap-[24px]">
+                <div className="flex justify-start w-full gap-[24px]">
                     <div className="flex flex-col flex-1 py-2 px-0">
                         <label htmlFor="message">
                             お問い合わせ内容
                         </label>
-                        <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full h-72" name="message" id="message" />
+                        <textarea
+                            className="border-2 border-t-zinc-300 border-solid rounded-md p-2 w-full h-72 resize-none"
+                            name="message"
+                            id="message"
+                            required
+                            ref={contentRef}
+                        />
                     </div>
                 </div>
                 <div className="text-center mt-10">

@@ -1,9 +1,9 @@
 'use client';
 import { useRef } from "react"
 import Image from "next/image";
-import { ContactForm } from "./pages/ContactForm";
 import NewsList from "./components/News/NewsList";
 import { News } from "./models/News";
+import { ContactForm } from "./components/ContactForm/ContactForm";
 
 const data: {
   contents: News[]
@@ -139,51 +139,7 @@ export default function Home() {
           <p className="text-center py-4">弊社へのお問い合わせはこちらよりお願いいたします。<br />
             <br />
             ２営業日以内にご返信させていただきます。</p>
-          <form className="px-4 max-w-[600px] mx-auto" onSubmit={(e) => handleSubmit(e)}>
-            <div className="flex justify-start items-center w-full gap-[24px]">
-              <div className="flex flex-col flex-1 py-2 px-0">
-                <label className="text-sm" htmlFor="fullname">
-                  お名前
-                </label>
-                <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="lastname" name="lastname" required ref={nameRef} />
-              </div>
-            </div>
-            <div className="flex justify-start items-center w-full gap-[24px]">
-              <div className="flex flex-col flex-1 py-2 px-0">
-                <label htmlFor="companyname">
-                  会社名
-                </label>
-                <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="companyname" name="companyname" required ref={companyRef} />
-              </div>
-            </div>
-            <div className="flex justify-start items-center w-full gap-[24px]">
-              <div className="flex flex-col flex-1 py-2 px-0">
-                <label htmlFor="mailaddress">
-                  メールアドレス
-                </label>
-                <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="mailaddress" name="mailaddress" required ref={emailRef} />
-              </div>
-            </div>
-            <div className="flex justify-start items-center w-full gap-[24px]">
-              <div className="flex flex-col flex-1 py-2 px-0">
-                <label htmlFor="phonenumber">
-                  電話番号
-                </label>
-                <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="phonenumber" name="phonenumber" />
-              </div>
-            </div>
-            <div className="flex justify-start items-center w-full gap-[24px]">
-              <div className="flex flex-col flex-1 py-2 px-0">
-                <label htmlFor="message">
-                  お問い合わせ内容
-                </label>
-                <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full h-72" name="message" id="message" />
-              </div>
-            </div>
-            <div className="text-center mt-10">
-              <input className="border-none bg-slate-900 py-4 px-10 text-base rounded text-gray-50 cursor-pointer" type="submit" value="送信する" />
-            </div>
-          </form>
+          <ContactForm />
         </div>
       </section>
     </>
