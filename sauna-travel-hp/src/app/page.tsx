@@ -4,6 +4,9 @@ import Image from "next/image";
 import NewsList from "./components/News/NewsList";
 import { News } from "./models/News";
 import { ContactForm } from "./components/ContactForm/ContactForm";
+import { GET } from "./api/router";
+import ServiceSection from "./components/Service/Service";
+import ProfileSection from "./components/Profile/Profile";
 
 const data: {
   contents: News[]
@@ -40,6 +43,26 @@ export default function Home() {
   const nameRef = useRef<HTMLInputElement>(null)
   const companyRef = useRef<HTMLInputElement>(null)
   const emailRef = useRef<HTMLInputElement>(null)
+
+  const fetchUser = async () => {
+    try {
+      const res = await fetch("http://localhost:8080/api/users/1", {
+        method: "GET",
+        headers: {
+          Accept: "application/json"
+        }
+      });
+
+      if (!res.ok) {
+        throw new Error(`Error: ${res.status}`);
+      }
+
+      const data = await res.json();
+      console.log(data);
+    } catch (error) {
+      console.error("Error fetching user:", error);
+    }
+  };
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("メール送信");
@@ -67,12 +90,13 @@ export default function Home() {
     <>
       <section className="relative flex items-center justify-center text-white overflow-hidden py-[200px]">
         <div>
-          <h1 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[1rem]" >サウナを旅の主役にする</h1>
+          <p className="text-neutral-950 font-bold font-serif text-2xl text-center mb-[1rem]" >世界を熱する回路になるんだ。</p>
+          <p className="text-neutral-950 font-bold font-serif text-6xl text-center mb-[2rem]" >Sauna Driven A to Z</p>
           <Image className="mx-auto" src="/img-logo.png" alt="" width={250} height={250} />
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <div>
           <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[1rem]" >News</h2>
           <div className="text-center">
@@ -80,12 +104,13 @@ export default function Home() {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
-      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]">
+      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px] ">
         <div className="px-4 lg:px-40">
           <p className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[2rem]" >Vision</p>
-          <p className="text-neutral-950 font-bold font-serif text-4xl text-center mb-[2rem]" >サウナを旅の主役にする</p>
+          <p className="text-neutral-950 font-bold font-serif text-2xl text-center mb-[1rem]" >世界を熱する回路になるんだ。</p>
+          <p className="text-neutral-950 font-bold font-serif text-6xl text-center mb-[2rem]" >Sauna Driven A to Z</p>
           <p className="text-neutral-950 font-sans text-base text-left mb-[2rem]">
             日本において、私たちが生まれてから今日に至るまでの期間は「失われた30年」と呼ばれ、希望も可能性も未来もないような暗い雰囲気が漂っています。<br />
             <br />
@@ -101,37 +126,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb-10">
-        <div>
-          <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[150px]" >Who We Are</h2>
-          <div className="lg:flex flex-row items-center px-4 lg:px-40px-40 ">
-            <Image className="lg:mx-6 mx-auto border-8 border-cyan-450 rounded-lg" src="/introduction.jpg" alt="" width={250} height={250} />
-            <p className="mt-4 lg:mt-0">
-              1998年7月6日生まれ。広島県呉市出身。<br />
-              2021年 東京理科大学 理工学部 応用生物科学科卒業<br />
-              2023年 東京大学大学院 新領域創成科学研究科 メディカル情報生命専攻 修了<br />
-              2023年 外資系コンサルティング会社に、データアナリストとして新卒で入社。<br />
-              <br />
-              大学時代は、体育会の少林寺拳法部に所属し、総勢39名の主将としてチーム運営を行う。全国大会への出場経験あり。<br />
-              また、サウナ施設を紹介するSNSを立ち上げ、複数のサウナ施設のマーケティング支援に携わる。(現フォロワー数4.2万人)<br />
-              入社後は、通信業界をメインに生成AIの新規事業開発や、PythonやSQLを用いての顧客分析案件に携わる。<br />
-              <br />
-              代表  濵中俊哉
-            </p>
-          </div>
-
-        </div>
-      </section>
-
       <section>
-        <div>
-          <div className="text-neutral-950 font-bold font-serif text-3xl text-center py-[200px]">Overview</div>
-          <div className="">
-
-          </div>
-
-        </div>
+        <ServiceSection />
+        <ProfileSection />
       </section>
+
+
 
       <section className="my-[100px] py-24  bg-slate-100">
         <div>
@@ -142,6 +142,9 @@ export default function Home() {
           <ContactForm />
         </div>
       </section>
+
+      {/* <button onClick={fetchUser}>取得させてくださいよぉ〜＝
+      </button> */}
     </>
   );
 }
