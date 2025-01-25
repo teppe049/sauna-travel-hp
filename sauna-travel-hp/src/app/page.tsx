@@ -111,7 +111,7 @@ export default function Home() {
           <p className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[2rem]" >Vision</p>
           <p className="text-neutral-950 font-bold font-serif text-2xl text-center mb-[1rem]" >熱を解き放つんだ。</p>
           <p className="text-neutral-950 font-bold font-serif text-6xl text-center mb-[2rem]" >Sauna Driven A to Z</p>
-          <p className="text-neutral-600 font-mono text-xl text-center mb-[2rem]">
+          <p className="text-neutral-600 text-xl font-serif text-center mb-[2rem]">
             人には熱が必要だ。<br />
             それはこの世界に存在する実感<br />
             意思や行動の原点。奇跡みたいな出会いをするための、波長。<br />

@@ -1,4 +1,5 @@
 // app/service/marketing/page.tsx
+import ClientShowcase from "@/app/components/Showcase/client-showcase";
 import ServiceSection from "@/app/ServiceSection/service-section";
 import React from "react";
 
@@ -15,6 +16,8 @@ export default function MarketingPage() {
             <p className="text-md text-center text-neutral-600 mt-4">
                 サービス事例
             </p>
+
+            <ClientShowcase />
 
 
 
