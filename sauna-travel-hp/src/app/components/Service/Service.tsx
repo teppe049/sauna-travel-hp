@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Link from "next/link";
 
 export default function ServiceSection() {
     return (
@@ -20,9 +20,13 @@ export default function ServiceSection() {
                             業界最安値で「認知拡大・集客増加」をご支援。企画から成果測定までを一気通貫でご提供する
                         </p>
                     </div>
-                    <button className="px-8 py-2 border text-sm hover:bg-neutral-50 transition-colors rounded-md ">
+                    <div><Link
+                        href="/service/marketing"
+                        className="px-8 py-2 border text-sm hover:bg-neutral-50 transition-colors rounded-md"
+                    >
                         詳しく見る
-                    </button>
+                    </Link></div>
+
                 </div>
             </div>
 
