@@ -106,34 +106,40 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px] ">
+      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]  bg-[#f5f9ffd9] ">
         <div className="px-4 lg:px-40">
           <p className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[2rem]" >Vision</p>
-          <p className="text-neutral-950 font-bold font-serif text-2xl text-center mb-[1rem]" >世界を熱する回路になるんだ。</p>
+          <p className="text-neutral-950 font-bold font-serif text-2xl text-center mb-[1rem]" >熱を解き放つんだ。</p>
           <p className="text-neutral-950 font-bold font-serif text-6xl text-center mb-[2rem]" >Sauna Driven A to Z</p>
-          <p className="text-neutral-950 font-sans text-base text-left mb-[2rem]">
-            日本において、私たちが生まれてから今日に至るまでの期間は「失われた30年」と呼ばれ、希望も可能性も未来もないような暗い雰囲気が漂っています。<br />
+          <p className="text-neutral-600 font-mono text-xl text-center mb-[2rem]">
+            人には熱が必要だ。<br />
+            それはこの世界に存在する実感<br />
+            意思や行動の原点。奇跡みたいな出会いをするための、波長。<br />
+            何かに夢中な人は、熱い。それがいつも<br />
+            世界をちょっとずつ変えてきた。<br />
             <br />
-            しかし、私たちが日本全国を旅する中で、今まで知らなかっただけの、魅力的な土地や人、食事、自然などがたくさんありました。<br />
+            そんな熱をもっと、世界中うの人々にともせたら。<br />
+            日常も非日常も、人生はきっともっと、<br />
+            胸が高鳴る瞬間にあふれている。<br />
             <br />
-            私たちはこうしたポテンシャルを秘めた「魅力」を「火種」と呼びます。<br />
+            熱とつながろう<br />
+            サウナトラベルは、サウナを起点に、<br />
+            世界中の熱と人をつなげます。<br />
+            熱を阻む障壁をなくせば、きっと今日は、もっとアツい。
             <br />
-            そうした「火種」を大切に大きくしていく、そしてゆくゆくは「火種」を自らつくり出していく。
-            これが、私たちのミッションです。<br />
-            <br />
-            全国各地で「火種」が生まれ続ければ、人の流動性が高まり、日本全体が明るく、アツくなると思っています。</p>
+          </p>
 
         </div>
       </section>
 
       <section>
         <ServiceSection />
-        <ProfileSection />
+        {/* <ProfileSection /> */}
       </section>
 
 
 
-      <section className="my-[100px] py-24  bg-slate-100">
+      <section className="my-[100px] py-24 bg-[#f5f9ffd9]">
         <div>
           <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[1rem]" >Contuct Us</h2>
           <p className="text-center py-4">弊社へのお問い合わせはこちらよりお願いいたします。<br />
