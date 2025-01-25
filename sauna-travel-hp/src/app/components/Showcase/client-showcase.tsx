@@ -27,7 +27,7 @@ export default function ClientShowcase() {
                         key={index}
                         image={client.image}
                         companyName={client.companyName}
-                        categoryLabel={client.categoryLabel}
+
                         items={client.items}
                     />
                 ))}
