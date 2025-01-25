@@ -36,9 +36,14 @@ export default function ServiceSection() {
                             予約機能を持つ、個室サウナ・アウトドアサウナ・サウナ付きホテル・サウナ付きコテージ/ヴィラなどの、日常使いをしない特別なサウナの予約が可能
                         </p>
                     </div>
-                    <button className="px-8 py-2 border text-sm hover:bg-neutral-50 transition-colors rounded-md ">
+                    <a
+                        href="https://sauna-travel-20240715.s3.ap-northeast-1.amazonaws.com/01_index.html"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-8 py-2 border text-sm hover:bg-neutral-50 transition-colors rounded-md text-center inline-block"
+                    >
                         詳しく見る
-                    </button>
+                    </a>
                 </div>
 
                 <div className="relative aspect-[4/3] bg-[#F5F9FF] rounded-lg p-8">
