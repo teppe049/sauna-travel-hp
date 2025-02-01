@@ -1,4 +1,6 @@
 import Link from "next/link";
+import ClientShowcase from "../Showcase/client-showcase";
+import Image from "next/image";
 
 export default function ServiceSection() {
     return (
@@ -9,37 +11,44 @@ export default function ServiceSection() {
             </div>
 
             {/* マーケティング支援 Section */}
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="relative aspect-[4/3] bg-[#F5F9FF] rounded-lg p-8">
-                </div>
+            <div className="grid  gap-8 items-center">
+                {/* <div className="relative aspect-[4/3] bg-[#F5F9FF] rounded-lg p-8">
+                </div> */}
                 <div className="space-y-6">
-                    <h3 className="text-2xl font-serif ">マーケティング支援事業</h3>
+                    <h3 className="text-2xl font-serif text-center">マーケティング支援事業</h3>
+                    <p className="text-md text-center text-neutral-600 mt-4">
+                        サービス事例
+                    </p>
+
+                    <ClientShowcase />
                     <div className="space-y-4">
-                        <p className="text-sm leading-relaxed">サウナ × SNS マーケティング支援サービス</p>
-                        <p className="text-sm leading-relaxed">
+                        {/* <p className="text-sm leading-relaxed">サウナ × SNS マーケティング支援サービス</p> */}
+                        {/* <p className="text-sm leading-relaxed">
                             業界最安値で「認知拡大・集客増加」をご支援。企画から成果測定までを一気通貫でご提供する
-                        </p>
+                        </p> */}
                     </div>
-                    <div><Link
+                    {/* <div><Link
                         href="/service/marketing"
                         className="px-8 py-2 border text-sm hover:bg-neutral-50 transition-colors rounded-md"
                     >
                         詳しく見る
-                    </Link></div>
+                    </Link></div> */}
 
                 </div>
             </div>
 
-            {/* SHE WORKS Section */}
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-                <div className="space-y-6">
-                    <h3 className="text-2xl font-serif ">トラベル事業</h3>
-                    <div className="space-y-4">
+            <div className="grid gap-8 items-center">
+                <div className="space-y-6 flex flex-col items-center">
+                    <h3 className="text-2xl font-serif text-center">トラベル事業</h3>
+                    <div className="space-y-4 text-center">
                         <p className="text-sm leading-relaxed">サウナ施設の検索・比較・予約を行える日本初サウナ専門の予約サイト</p>
-                        <p className="text-sm leading-relaxed text-neutral-600">
+                        {/* <p className="text-sm leading-relaxed text-neutral-600">
                             予約機能を持つ、個室サウナ・アウトドアサウナ・サウナ付きホテル・サウナ付きコテージ/ヴィラなどの、日常使いをしない特別なサウナの予約が可能
-                        </p>
+                        </p> */}
                     </div>
+                    {/* <div className="relative w-3/4 md:w-1/2 aspect-[4/3] bg-[#F5F9FF] rounded-lg p-6 mx-auto"></div>
+                     */}
+                    <Image className="mx-auto" src="/travelsample.png" alt="" width={250} height={250} />
                     <a
                         href="https://sauna-travel-20240715.s3.ap-northeast-1.amazonaws.com/01_index.html"
                         target="_blank"
@@ -49,11 +58,8 @@ export default function ServiceSection() {
                         詳しく見る
                     </a>
                 </div>
-
-                <div className="relative aspect-[4/3] bg-[#F5F9FF] rounded-lg p-8">
-                </div>
-
             </div>
+
         </section>
     )
 }
