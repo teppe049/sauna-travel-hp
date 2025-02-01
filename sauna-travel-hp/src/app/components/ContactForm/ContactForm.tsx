@@ -73,7 +73,7 @@ export function ContactForm() {
     } else {
         return (
             <>
-                <form className="max-w-[600px] mx-auto" onSubmit={(e) => handleSubmit(e)} >
+                <form className="max-w-[600px] mx-auto p-4 sm:p-6" onSubmit={(e) => handleSubmit(e)} >
 
                     <div className="flex justify-start items-center w-full gap-[24px]">
                         <div className="flex flex-col flex-1 py-2 px-0">
