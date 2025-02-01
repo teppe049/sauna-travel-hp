@@ -16,15 +16,15 @@ export default function ServiceSection() {
                 </div> */}
                 <div className="space-y-6">
                     <h3 className="text-2xl font-serif text-center">マーケティング支援事業</h3>
-                    <p className="text-md text-center text-neutral-600 mt-4">
-                        サービス事例
+                    <p className="text-sm leading-relaxed text-center">
+                        「認知拡大・集客増加」をご支援。企画から成果測定までを一気通貫でご提供する
                     </p>
 
                     <ClientShowcase />
                     <div className="space-y-4">
                         {/* <p className="text-sm leading-relaxed">サウナ × SNS マーケティング支援サービス</p> */}
                         {/* <p className="text-sm leading-relaxed">
-                            業界最安値で「認知拡大・集客増加」をご支援。企画から成果測定までを一気通貫でご提供する
+                            「認知拡大・集客増加」をご支援。企画から成果測定までを一気通貫でご提供する
                         </p> */}
                     </div>
                     {/* <div><Link
