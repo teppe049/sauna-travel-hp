@@ -17,7 +17,7 @@ export default function MarketingPage() {
                 サービス事例
             </p>
 
-            <ClientShowcase />
+            {/* <ClientShowcase /> */}
 
 
 
