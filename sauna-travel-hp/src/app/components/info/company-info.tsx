@@ -25,8 +25,8 @@ export default function CompanyInfo() {
     return (
         <div className="flex justify-center py-16 px-4">
             <div className="max-w-3xl w-full space-y-4">
-                <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center">About Us</h2>
-                <p className="text-md text-center text-neutral-600">会社情報</p>
+                <h2 className="text-neutral-950 font-bold font-serif text-4xl text-center">About Us</h2>
+                <p className="text-lg text-center text-neutral-600">会社情報</p>
                 <div className="w-full">
                     <InfoRow label="会社名" value="株式会社Sauna Travel" />
                     <InfoRow label="創業" value="2024年7月29日" />

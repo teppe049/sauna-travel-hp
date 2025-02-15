@@ -40,8 +40,8 @@ export default function ServiceSection() {
     return (
         <section className="py-16 space-y-32">
             <div className="space-y-2">
-                <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center">SERVICE</h2>
-                <p className="text-md text-center text-neutral-600">事業内容</p>
+                <h2 className="text-neutral-950 font-bold font-serif text-4xl text-center">SERVICE</h2>
+                <p className="text-lg text-center text-neutral-600">事業内容</p>
             </div>
 
             {/* マーケティング支援 Section */}
@@ -61,10 +61,10 @@ export default function ServiceSection() {
             {/* トラベル事業 Section */}
             <div className="grid gap-8 items-center">
                 <div className="space-y-6 flex flex-col items-center">
-                    <h3 className="text-2xl font-serif text-center">トラベル事業</h3>
+                    <h3 className="text-3xl font-serif text-center">トラベル事業</h3>
                     <div className="space-y-4 text-center">
-                        <p className="text-sm leading-relaxed">サウナ施設の検索・比較・予約を行える日本初サウナ専門の予約サイト</p>
-                        <p className="text-sm leading-relaxed">
+                        <p className="text-lg leading-relaxed">サウナ施設の検索・比較・予約を行える日本初サウナ専門の予約サイト</p>
+                        <p className="text-lg leading-relaxed">
                             アウトドアサウナ・サウナ付きホテル・サウナ付きコテージ/ヴィラなどの、日常使いをしない特別なサウナの予約ができます
                         </p>
                     </div>
@@ -87,9 +87,10 @@ export default function ServiceSection() {
             {/* メディア事業 Section */}
 
             <div className="space-y-6">
-                <h3 className="text-2xl font-serif text-center">メディア事業</h3>
-                <p className="text-sm leading-relaxed text-center">
-                    サウナ施設を紹介するメディアの運営
+                <h3 className="text-3xl font-serif text-center">メディア事業</h3>
+                <p className="text-lg leading-relaxed text-center">
+                    サウナ好きのための情報メディアを運営<br />
+                    全国のサウナを紹介し、あなたにぴったりのサウナをお届けします
                 </p>
                 <ClientShowcase cards={medias} />
 

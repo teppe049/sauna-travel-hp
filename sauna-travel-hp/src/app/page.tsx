@@ -110,8 +110,8 @@ export default function Home() {
 
       <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px] ">
         <div className="px-4 lg:px-40">
-          <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center">Vision</h2>
-          <p className="text-md text-center text-neutral-600">私たちの展望</p>
+          <h2 className="text-neutral-950 font-bold font-serif text-4xl text-center">Vision</h2>
+          <p className="text-lg text-center text-neutral-600">私たちの展望</p>
           <p className="font-bold font-serif text-6xl text-center my-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
           <p className="text-neutral-900 font-bold font-serif text-2xl text-center mb-[1rem]">熱を解きはなつ</p>
           <p className="text-neutral-900 text-xl font-serif text-center mt-10 mb-[2rem]">
