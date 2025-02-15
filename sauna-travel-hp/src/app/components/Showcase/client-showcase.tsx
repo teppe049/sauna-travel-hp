@@ -14,10 +14,9 @@ interface CardPropatyProps {
 
 export default function ClientShowcase({ cards }: CardPropatyProps) {
     return (
-        <div className="mx-auto px-4 pb-8 max-w-screen-lg">
+        <div className="mx-auto px-4 pb-8 max-w-4xl">
             <div
-                className={`grid gap-6 ${cards.length === 2 ? "grid-cols-1 md:grid-cols-2 " : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
-                    }`}
+                className="grid gap-6 justify-items-center md:grid-cols-2"
             >
                 {cards.map((client, index) => (
                     <ClientCard
@@ -32,4 +31,3 @@ export default function ClientShowcase({ cards }: CardPropatyProps) {
         </div>
     );
 }
-

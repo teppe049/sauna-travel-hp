@@ -7,6 +7,7 @@ import { ContactForm } from "./components/ContactForm/ContactForm";
 import { GET } from "./api/router";
 import ServiceSection from "./components/Service/Service";
 import ProfileSection from "./components/Profile/Profile";
+import CompanyInfo from "./components/info/company-info";
 
 const data: {
   contents: News[]
@@ -89,10 +90,9 @@ export default function Home() {
   return (
     <>
       <section className="relative flex items-center justify-center text-white overflow-hidden py-[200px]">
-        <div>
-          <p className="text-neutral-950 font-bold font-serif text-2xl text-center mb-[1rem]" >世界を熱する回路になるんだ。</p>
-          <p className="text-neutral-950 font-bold font-serif text-6xl text-center mb-[2rem]" >Sauna Driven A to Z</p>
-          <Image className="mx-auto" src="/img-logo.png" alt="" width={250} height={250} />
+        <div className="flex flex-col items-center ">
+          <p className="text-neutral-950 font-bold font-serif text-2xl mb-5 text-center">熱を解きはなつ</p>
+          <Image src="/logo-1.png" alt="" width={250} height={250} />
         </div>
       </section>
 
@@ -106,35 +106,44 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]  bg-[#f5f9ffd9] ">
+      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px] ">
         <div className="px-4 lg:px-40">
-          <p className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[2rem]" >Vision</p>
-          <p className="text-neutral-950 font-bold font-serif text-2xl text-center mb-[1rem]" >熱を解き放つんだ。</p>
-          <p className="text-neutral-950 font-bold font-serif text-6xl text-center mb-[2rem]" >Sauna Driven A to Z</p>
-          <p className="text-neutral-600 text-xl font-serif text-center mb-[2rem]">
+          <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center">Vision</h2>
+          <p className="text-md text-center text-neutral-600">私たちの展望</p>
+          <p className="font-bold font-serif text-6xl text-center my-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
+          <p className="text-neutral-900 font-bold font-serif text-2xl text-center mb-[1rem]">熱を解きはなつ</p>
+          <p className="text-neutral-900 text-xl font-serif text-center mt-10 mb-[2rem]">
             人には熱が必要だ。<br />
-            それはこの世界に存在する実感<br />
-            意思や行動の原点。奇跡みたいな出会いをするための、波長。<br />
-            何かに夢中な人は、熱い。それがいつも<br />
+            それはこの世界に存在する実感。<br />
+            意思や行動の原点。奇跡みたいな出会いをするための波長。<br />
+            何かに夢中な人は、熱い。それがいつも、<br />
             世界をちょっとずつ変えてきた。<br />
             <br />
-            そんな熱をもっと、世界中うの人々にともせたら。<br />
+            そんな熱をもっと、世界中にともせたら。<br />
             日常も非日常も、人生はきっともっと、<br />
-            胸が高鳴る瞬間にあふれている。<br />
+            心やからだが熱を帯びる、そんな瞬間にあふれてる。<br />
             <br />
-            熱とつながろう<br />
+            熱とつながろう。<br />
             サウナトラベルは、サウナを起点に、<br />
             世界中の熱と人をつなげます。<br />
-            熱を阻む障壁をなくせば、きっと今日は、もっとアツい。
+            これまで熱を阻んできた、サウナと人を遠ざける壁も、<br />
+            言葉にできなかった小さなモヤモヤも、すべて取り払っていく。<br />
             <br />
-          </p>
+            さあ、あなたのところまで。<br />
+            <br />
 
+          </p>
         </div>
+
       </section>
 
       <section>
         <ServiceSection />
         {/* <ProfileSection /> */}
+      </section>
+
+      <section className="my-[100px] py-24">
+        <CompanyInfo />
       </section>
 
 
@@ -151,7 +160,7 @@ export default function Home() {
 
       <footer>
         <div className="relative flex flex-col items-center justify-center text-white overflow-hidden">
-          <Image src="/header.png"
+          <Image src="/logo-2.png"
             alt="SaunaTravel"
             width={200}
             height={150}

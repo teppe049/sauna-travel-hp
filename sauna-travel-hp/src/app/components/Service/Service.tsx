@@ -24,13 +24,13 @@ const clients = [
 const medias = [
     {
         image: "/saunaWorker.jpg",
-        companyName: "XXXHOTEL",
+        companyName: "ハマ┆サウナリーマン",
         items: [""],
         link: "https://www.instagram.com/hama.kantousauna/"
     },
     {
         image: "/img-logo.png",
-        companyName: "YYY湯",
+        companyName: "Sauna Travel【公式】",
         items: [""],
         link: "https://www.instagram.com/saunatravel_jp/"
     },
@@ -45,7 +45,7 @@ export default function ServiceSection() {
             </div>
 
             {/* マーケティング支援 Section */}
-            <div className="grid ">
+            {/* <div className="grid ">
                 <div className="space-y-6 px-32">
                     <h3 className="text-2xl font-serif text-center">マーケティング支援事業</h3>
                     <p className="text-sm leading-relaxed text-center">
@@ -56,7 +56,7 @@ export default function ServiceSection() {
                     <div className="space-y-4">
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* トラベル事業 Section */}
             <div className="grid gap-8 items-center">
@@ -71,14 +71,16 @@ export default function ServiceSection() {
                     {/* <div className="relative w-3/4 md:w-1/2 aspect-[4/3] bg-[#F5F9FF] rounded-lg p-6 mx-auto"></div>
                      */}
                     <Image className="mx-auto" src="/travelsample.png" alt="" width={250} height={250} />
-                    <a
+                    <h3 className="text-2xl text-center font-extralight">2025年7月リリース予定</h3>
+
+                    {/* <a
                         href="https://sauna-travel-20240715.s3.ap-northeast-1.amazonaws.com/01_index.html"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="px-8 py-2 border text-sm hover:bg-neutral-50 transition-colors rounded-md text-center inline-block"
                     >
                         詳しく見る
-                    </a>
+                    </a> */}
                 </div>
             </div>
 

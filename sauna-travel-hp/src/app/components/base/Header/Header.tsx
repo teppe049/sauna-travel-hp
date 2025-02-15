@@ -14,7 +14,7 @@ export default function Header() {
         <header className="pl-4 py-2 fixed w-full bg-white shadow-sm z-50">
             <Link
                 href="/" >
-                <Image src="/header.png"
+                <Image src="/logo-3.png"
                     alt="SaunaTravel"
                     width={150}
                     height={100}
