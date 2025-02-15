@@ -5,15 +5,16 @@ interface ClientCardProps {
     companyName: string;
     items: string[];
     link?: string;
+    className: string;
 }
 
-export function ClientCard({ image, companyName, items, link }: ClientCardProps) {
+export function ClientCard({ image, companyName, items, link, className }: ClientCardProps) {
     return (
         <a
             href={link || "https://www.google.com"}
             target="_blank"
             rel="noopener noreferrer"
-            className="block"
+            className={`block ${className}`}
         >
             <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col items-center 
                             text-center min-w-[400px] max-w-[400px] transition-transform 
