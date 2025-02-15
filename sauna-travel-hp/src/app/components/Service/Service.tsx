@@ -32,7 +32,7 @@ const medias = [
         image: "/img-logo.png",
         companyName: "Sauna Travel【公式】",
         items: [""],
-        link: "https://www.instagram.com/saunatravel_jp/"
+        link: "https://x.com/SaunaTravel_JP"
     },
 ]
 
