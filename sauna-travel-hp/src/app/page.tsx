@@ -91,7 +91,7 @@ export default function Home() {
     <>
       <section className="relative flex items-center justify-center text-white overflow-hidden py-[200px]">
         <div className="flex flex-col items-center ">
-          <p className="text-neutral-950 font-bold font-serif text-xl mb-5 text-center">熱を解きはなつ</p>
+          <p className="text-neutral-950 font-bold font-serif text-md mb-5 text-center">熱を解きはなつ</p>
           <Image src="/logo-1.png" alt="" width={250} height={250} />
         </div>
       </section>
@@ -160,9 +160,9 @@ export default function Home() {
 
       <footer>
         <div className="relative flex flex-col items-center justify-center text-white overflow-hidden">
-          <Image src="/logo-2.png"
+          <Image src="/logo-3.png"
             alt="SaunaTravel"
-            width={200}
+            width={300}
             height={150}
             priority
           />
