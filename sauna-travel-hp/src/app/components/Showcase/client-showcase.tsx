@@ -14,10 +14,8 @@ interface CardPropatyProps {
 
 export default function ClientShowcase({ cards }: CardPropatyProps) {
     return (
-        <div className="mx-auto px-4 pb-8 max-w-4xl">
-            <div
-                className="grid gap-6 justify-items-center md:grid-cols-2"
-            >
+        <div className="px-4 lg:px-40 mx-auto pb-8 max-w-4xl">
+            <div className="flex flex-wrap justify-center gap-6 md:flex-nowrap md:gap-8">
                 {cards.map((client, index) => (
                     <ClientCard
                         key={index}
@@ -25,9 +23,11 @@ export default function ClientShowcase({ cards }: CardPropatyProps) {
                         companyName={client.companyName}
                         items={client.items}
                         link={client.link}
+                        className="w-full md:max-w-[400px]" // スマホでは100%の幅, PCでは400pxを維持
                     />
                 ))}
             </div>
         </div>
     );
 }
+

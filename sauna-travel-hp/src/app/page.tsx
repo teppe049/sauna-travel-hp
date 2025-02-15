@@ -89,10 +89,12 @@ export default function Home() {
   }
   return (
     <>
-      <section className="relative flex items-center justify-center text-white overflow-hidden py-[200px]">
-        <div className="flex flex-col items-center ">
-          <p className="text-neutral-950 font-bold font-serif text-md mb-5 text-center">熱を解きはなつ</p>
-          <Image src="/logo-1.png" alt="" width={250} height={250} />
+      <section className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-br to-[#345BA2] from-[#345BA2]">
+        <div className="text-center space-y-8">
+          <p className="text-2xl font-serif font-light tracking-widest text-[#e0e5eb]">
+            <span className="animate-typing">熱を解きはなつ</span>
+          </p>
+          <Image src="/logo-9.png" alt="Sauna Travel" width={320} height={320} className="opacity-90 mt-4" />
         </div>
       </section>
 
