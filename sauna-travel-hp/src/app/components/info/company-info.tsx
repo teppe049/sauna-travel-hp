@@ -37,7 +37,7 @@ export default function CompanyInfo() {
                         label="事業内容"
                         value={[
                             "サウナ付き宿泊施設専門の予約サイト運営",
-                            "サウナ施設特化のSNSを活用したマーケティング支援"
+                            "SNSを活用したマーケティング支援"
                         ]}
                     />
                     <InfoRow label="資本金" value="1,000,000円" />

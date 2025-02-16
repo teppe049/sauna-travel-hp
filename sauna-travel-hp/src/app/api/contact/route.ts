@@ -16,7 +16,7 @@ export async function POST(req: Request) {
 
         const toHostMailData = {
             from: body.email,
-            to: "konnichihunting@gmail.com", // 送信先
+            to: "sales@saunatravel.co.jp", // 送信先
             subject: `【お問合せ】${body.company} ${body.name}様より`, // タイトル
             text: `${body.company} Send from ${body.email}`,
             html: `
