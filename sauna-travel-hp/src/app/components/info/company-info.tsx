@@ -25,8 +25,10 @@ export default function CompanyInfo() {
     return (
         <div className="flex justify-center py-16 px-4 lg:px-40">
             <div className="max-w-3xl w-full space-y-6">
-                <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-4xl text-center">About Us</h2>
-                <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600">会社情報</p>
+                <div className="max-w-screen-xl mx-auto space-y-2">
+                    <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">About Us</h2>
+                    <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600">会社情報</p>
+                </div>
                 <div className="w-full">
                     <InfoRow label="会社名" value="株式会社Sauna Travel" />
                     <InfoRow label="創業" value="2024年7月29日" />
@@ -35,7 +37,7 @@ export default function CompanyInfo() {
                         label="事業内容"
                         value={[
                             "サウナ付き宿泊施設専門の予約サイト運営",
-                            "インフルエンサーを活用したSNSマーケ施策支援"
+                            "サウナ施設特化のSNSを活用したマーケティング支援"
                         ]}
                     />
                     <InfoRow label="資本金" value="1,000,000円" />

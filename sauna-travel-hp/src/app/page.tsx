@@ -111,8 +111,8 @@ export default function Home() {
       <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]">
         <div className="px-4 lg:px-40">
           <div className="max-w-screen-xl mx-auto space-y-2">
-            <h2 className="text-neutral-950 font-bold font-serif text-4xl text-center">Vison</h2>
-            <p className="text-lg text-center text-neutral-600">私たちの展望</p>
+            <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">Vison</h2>
+            <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600">私たちの展望</p>
           </div>
           <p className="text-neutral-900 font-bold font-serif text-xl md:text-2xl lg:text-3xl text-center mt-[3rem]">熱を解きはなつ</p>
           <p className="font-bold font-serif text-4xl md:text-6xl lg:text-7xl text-center mb-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
@@ -153,10 +153,19 @@ export default function Home() {
 
       <section className="my-[100px] py-24 bg-[#f5f9ffd9]">
         <div>
-          <h2 className="text-neutral-950 font-bold font-serif text-3xl text-center mb-[1rem]" >Contuct Us</h2>
-          <p className="text-center py-4">弊社へのお問い合わせはこちらよりお願いいたします。<br />
-            <br />
-            ２営業日以内にご返信させていただきます。</p>
+          <div className="max-w-screen-xl mx-auto space-y-2 ">
+            <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">Contuct</h2>
+            <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600">お問い合わせ</p>
+          </div>
+
+          <div className="mt-10 space-y-4 text-center">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+              弊社へのお問い合わせはこちらよりお願いいたします。
+            </p>
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+              ２営業日以内にご返信させていただきます。
+            </p>
+          </div>
           <ContactForm />
         </div>
       </section>

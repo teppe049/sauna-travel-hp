@@ -72,66 +72,62 @@ export function ContactForm() {
         );
     } else {
         return (
-            <>
-                <form className="max-w-[600px] mx-auto p-4 sm:p-6" onSubmit={(e) => handleSubmit(e)} >
-
-                    <div className="flex justify-start items-center w-full gap-[24px]">
-                        <div className="flex flex-col flex-1 py-2 px-0">
-                            <label className="text-sm" htmlFor="fullname">
+            <div className="px-4 lg:px-40">
+                <form className="max-w-3xl mx-auto p-4 sm:p-6" onSubmit={(e) => handleSubmit(e)} >
+                    <div className="flex flex-col gap-6 md:gap-8">
+                        <div className="flex flex-col">
+                            <label className="text-sm md:text-base text-gray-700" htmlFor="fullname">
                                 お名前
                             </label>
-                            <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="name" name="name" ref={nameRef} />
+                            <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="text" id="name" name="name" ref={nameRef} />
                         </div>
-                    </div>
-                    <div className="flex justify-start items-center w-full gap-[24px]">
-                        <div className="flex flex-col flex-1 py-2 px-0">
-                            <label htmlFor="companyname">
+
+                        <div className="flex flex-col">
+                            <label className="text-sm md:text-base text-gray-700" htmlFor="companyname">
                                 会社名
                             </label>
-                            <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="companyname" name="companyname" ref={companyRef} />
+                            <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="text" id="companyname" name="companyname" ref={companyRef} />
                         </div>
-                    </div>
-                    <div className="flex justify-start items-center w-full gap-[24px]">
-                        <div className="flex flex-col flex-1 py-2 px-0">
-                            <label htmlFor="mailaddress">
+
+                        <div className="flex flex-col">
+                            <label className="text-sm md:text-base text-gray-700" htmlFor="mailaddress">
                                 メールアドレス
                             </label>
-                            <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="mailaddress" name="mailaddress" ref={emailRef} />
+                            <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="email" id="mailaddress" name="mailaddress" ref={emailRef} />
                         </div>
-                    </div>
-                    <div className="flex justify-start items-center w-full gap-[24px]">
-                        <div className="flex flex-col flex-1 py-2 px-0">
-                            <label htmlFor="phonenumber">
+
+                        <div className="flex flex-col">
+                            <label className="text-sm md:text-base text-gray-700" htmlFor="phonenumber">
                                 電話番号
                             </label>
-                            <input className="border-2 border-t-zinc-300 border-solid rounded-md p-2 leading-[1.5] w-full" type="text" id="phonenumber" name="phonenumber" ref={phoneRef} />
+                            <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="tel" id="phonenumber" name="phonenumber" ref={phoneRef} />
                         </div>
-                    </div>
-                    <div className="flex justify-start w-full gap-[24px]">
-                        <div className="flex flex-col flex-1 py-2 px-0">
-                            <label htmlFor="message">
+
+                        <div className="flex flex-col">
+                            <label className="text-sm md:text-base text-gray-700" htmlFor="message">
                                 お問い合わせ内容
                             </label>
                             <textarea
-                                className="border-2 border-t-zinc-300 border-solid rounded-md p-2 w-full h-72 resize-none"
+                                className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base w-full h-48 md:h-64 resize-none"
                                 name="message"
                                 id="message"
-                                ref={contentRef} // 修正: ref を textarea 用に設定
+                                ref={contentRef}
                             />
                         </div>
-                    </div>
-                    <div>
+
                         {errorMessage && (
-                            <p className="text-red-500 bg-red-100 gap-[24px] p-2 rounded mb-4 text-center">
+                            <p className="text-red-500 bg-red-100 p-3 rounded text-center">
                                 {errorMessage}
                             </p>
                         )}
-                    </div>
-                    <div className="text-center mt-10">
-                        <input className="border-none bg-slate-900 py-4 px-10 text-base rounded text-gray-50 cursor-pointer" type="submit" value="送信する" />
+
+                        <div className="text-center mt-8">
+                            <input className="border-none bg-slate-900 py-3 px-8 md:py-4 md:px-10 text-sm md:text-lg rounded text-white cursor-pointer" type="submit" value="送信する" />
+                        </div>
                     </div>
                 </form>
-            </>
-        )
+            </div>
+        );
+
     }
 }
