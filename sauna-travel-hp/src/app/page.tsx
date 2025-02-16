@@ -94,7 +94,7 @@ export default function Home() {
           <p className="text-2xl font-serif font-light tracking-widest text-[#e0e5eb]">
             <span className="animate-typing">熱を解きはなつ</span>
           </p>
-          <Image src="/logo-9.png" alt="Sauna Travel" width={320} height={320} className="opacity-90 mt-4" />
+          <Image src="/logo-9.png" alt="Sauna Travel" width={320} height={320} className="opacity-90 mt-4 responsive" />
         </div>
       </section>
 
@@ -112,8 +112,8 @@ export default function Home() {
         <div className="px-4 lg:px-40">
           <h2 className="text-neutral-950 font-bold font-serif text-4xl text-center">Vision</h2>
           <p className="text-lg text-center text-neutral-600">私たちの展望</p>
-          <p className="font-bold font-serif text-6xl text-center my-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
           <p className="text-neutral-900 font-bold font-serif text-2xl text-center mb-[1rem]">熱を解きはなつ</p>
+          <p className="font-bold font-serif text-6xl text-center my-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
           <p className="text-neutral-900 text-xl font-serif text-center mt-10 mb-[2rem]">
             人には熱が必要だ。<br />
             それはこの世界に存在する実感。<br />
@@ -164,7 +164,7 @@ export default function Home() {
         <div className="relative flex flex-col items-center justify-center text-white overflow-hidden">
           <Image src="/logo-3.png"
             alt="SaunaTravel"
-            width={300}
+            width={100}
             height={150}
             priority
           />
