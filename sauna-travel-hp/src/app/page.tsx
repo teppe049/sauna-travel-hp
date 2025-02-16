@@ -162,10 +162,10 @@ export default function Home() {
 
       <footer>
         <div className="relative flex flex-col items-center justify-center text-white overflow-hidden">
-          <Image src="/logo-3.png"
+          <Image src="/logo-2.png"
             alt="SaunaTravel"
-            width={100}
-            height={150}
+            width={80}
+            height={100}
             priority
           />
           <br />
