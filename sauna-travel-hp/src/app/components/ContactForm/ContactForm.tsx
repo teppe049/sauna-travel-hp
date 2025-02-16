@@ -76,35 +76,35 @@ export function ContactForm() {
                 <form className="max-w-3xl mx-auto p-4 sm:p-6" onSubmit={(e) => handleSubmit(e)} >
                     <div className="flex flex-col gap-6 md:gap-8">
                         <div className="flex flex-col">
-                            <label className="text-sm md:text-base text-gray-700" htmlFor="fullname">
+                            <label className="text-sm md:text-base text-gray-700 font-serif" htmlFor="fullname">
                                 お名前
                             </label>
                             <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="text" id="name" name="name" ref={nameRef} />
                         </div>
 
                         <div className="flex flex-col">
-                            <label className="text-sm md:text-base text-gray-700" htmlFor="companyname">
+                            <label className="text-sm md:text-base text-gray-700 font-serif" htmlFor="companyname">
                                 会社名
                             </label>
                             <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="text" id="companyname" name="companyname" ref={companyRef} />
                         </div>
 
                         <div className="flex flex-col">
-                            <label className="text-sm md:text-base text-gray-700" htmlFor="mailaddress">
+                            <label className="text-sm md:text-base text-gray-700 font-serif" htmlFor="mailaddress">
                                 メールアドレス
                             </label>
                             <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="email" id="mailaddress" name="mailaddress" ref={emailRef} />
                         </div>
 
                         <div className="flex flex-col">
-                            <label className="text-sm md:text-base text-gray-700" htmlFor="phonenumber">
+                            <label className="text-sm md:text-base text-gray-700 font-serif" htmlFor="phonenumber">
                                 電話番号
                             </label>
                             <input className="border-2 border-gray-300 rounded-md p-3 text-sm md:text-base leading-[1.5] w-full" type="tel" id="phonenumber" name="phonenumber" ref={phoneRef} />
                         </div>
 
                         <div className="flex flex-col">
-                            <label className="text-sm md:text-base text-gray-700" htmlFor="message">
+                            <label className="text-sm md:text-base text-gray-700 font-serif" htmlFor="message">
                                 お問い合わせ内容
                             </label>
                             <textarea
@@ -122,7 +122,7 @@ export function ContactForm() {
                         )}
 
                         <div className="text-center mt-8">
-                            <input className="border-none bg-slate-900 py-3 px-8 md:py-4 md:px-10 text-sm md:text-lg rounded text-white cursor-pointer" type="submit" value="送信する" />
+                            <input className="border-none bg-slate-900 py-3 px-8 md:py-4 md:px-10 text-sm md:text-lg rounded text-white cursor-pointer font-serif" type="submit" value="送信する" />
                         </div>
                     </div>
                 </form>

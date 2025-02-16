@@ -27,7 +27,7 @@ export function ClientCard({ image, companyName, items, link, className }: Clien
                         className="object-contain"
                     />
                 </div>
-                <h3 className="text-lg font-medium mb-4">{companyName}</h3>
+                <h3 className="text-lg font-medium font-serif mb-4">{companyName}</h3>
                 <div className="space-y-2"></div>
             </div>
         </a>

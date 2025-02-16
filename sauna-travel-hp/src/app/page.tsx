@@ -91,9 +91,9 @@ export default function Home() {
     <>
       <section className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-br to-[#345BA2] from-[#345BA2]">
         <div className="text-center space-y-8">
-          <p className="text-2xl font-serif font-light tracking-widest text-[#e0e5eb]">
+          {/* <p className="text-2xl font-serif font-light tracking-widest text-[#e0e5eb]">
             <span className="animate-typing">熱を解きはなつ</span>
-          </p>
+          </p> */}
           <Image src="/logo-9.png" alt="Sauna Travel" width={320} height={320} className="opacity-90 mt-4 responsive" />
         </div>
       </section>
@@ -155,14 +155,14 @@ export default function Home() {
         <div>
           <div className="max-w-screen-xl mx-auto space-y-2 ">
             <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">Contuct</h2>
-            <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600">お問い合わせ</p>
+            <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600 font-serif">お問い合わせ</p>
           </div>
 
           <div className="mt-10 space-y-4 text-center">
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed font-serif">
               弊社へのお問い合わせはこちらよりお願いいたします。
             </p>
-            <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl leading-relaxed font-serif">
               ２営業日以内にご返信させていただきます。
             </p>
           </div>
