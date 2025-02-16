@@ -70,7 +70,7 @@ export default function ServiceSection() {
                     <p className="text-base md:text-lg lg:text-xl leading-relaxed text-center font-serif">
                         サウナ施設紹介メディア「ハマ｜サウナリーマン」を運営しています。（SNSフォロワー数2.3万人 ※2025年2月時点）
                     </p>
-                    <p className="text-base md:text-lg lg:text-xl leading-relaxed font-serifs">
+                    <p className="text-base md:text-lg lg:text-xl leading-relaxed font-serif">
                         他にも、TikTokやXにて、サウナ付き宿泊施設紹介のアカウントも運営しております。（SNS総フォロワー数4.2万人 ※2025年2月時点）
                     </p>
                 </div>
