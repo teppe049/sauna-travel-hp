@@ -108,13 +108,15 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px] ">
+      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]">
         <div className="px-4 lg:px-40">
-          <h2 className="text-neutral-950 font-bold font-serif text-4xl text-center">Vision</h2>
-          <p className="text-lg text-center text-neutral-600">私たちの展望</p>
-          <p className="text-neutral-900 font-bold font-serif text-2xl text-center mb-[1rem]">熱を解きはなつ</p>
-          <p className="font-bold font-serif text-6xl text-center my-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
-          <p className="text-neutral-900 text-xl font-serif text-center mt-10 mb-[2rem]">
+          <div className="max-w-screen-xl mx-auto space-y-2">
+            <h2 className="text-neutral-950 font-bold font-serif text-4xl text-center">Vison</h2>
+            <p className="text-lg text-center text-neutral-600">私たちの展望</p>
+          </div>
+          <p className="text-neutral-900 font-bold font-serif text-xl md:text-2xl lg:text-3xl text-center mt-[3rem]">熱を解きはなつ</p>
+          <p className="font-bold font-serif text-4xl md:text-6xl lg:text-7xl text-center mb-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
+          <p className="text-neutral-900 text-sm md:text-lg lg:text-xl font-serif text-center mt-2 mb-[2rem]">
             人には熱が必要だ。<br />
             それはこの世界に存在する実感。<br />
             意思や行動の原点。奇跡みたいな出会いをするための波長。<br />
@@ -133,11 +135,10 @@ export default function Home() {
             <br />
             さあ、あなたのところまで。<br />
             <br />
-
           </p>
         </div>
-
       </section>
+
 
       <section>
         <ServiceSection />
@@ -173,9 +174,6 @@ export default function Home() {
 
         </div>
       </footer>
-
-      {/* <button onClick={fetchUser}>取得させてくださいよぉ〜＝
-      </button> */}
     </>
   );
 }

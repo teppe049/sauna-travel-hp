@@ -14,8 +14,8 @@ interface CardPropatyProps {
 
 export default function ClientShowcase({ cards }: CardPropatyProps) {
     return (
-        <div className="px-4 lg:px-40 mx-auto pb-8 max-w-4xl overflow-hidden"> {/* ✅ ここに overflow-hidden を追加 */}
-            <div className="flex flex-wrap justify-center gap-6 md:flex-nowrap md:gap-8 w-full max-w-full"> {/* ✅ w-full max-w-full を追加 */}
+        <div className="px-4 lg:px-40 mx-auto pb-8 max-w-[1200px]"> {/* PC で余白が大きくならないように */}
+            <div className="flex flex-wrap justify-center gap-6 md:flex-nowrap md:gap-8 w-full">
                 {cards.map((client, index) => (
                     <ClientCard
                         key={index}
@@ -23,12 +23,11 @@ export default function ClientShowcase({ cards }: CardPropatyProps) {
                         companyName={client.companyName}
                         items={client.items}
                         link={client.link}
-                        className="w-full max-w-[400px]" // ✅ w-full は維持, max-w で最大幅を制限
+                        className="w-full max-w-[400px] md:max-w-[500px] lg:max-w-[600px]" // PC の時は最大 600px まで拡大
                     />
                 ))}
             </div>
         </div>
     );
 }
-
 
