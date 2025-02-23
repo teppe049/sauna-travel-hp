@@ -45,7 +45,7 @@ export default function ServiceSection() {
             </div>
 
             {/* トラベル事業 Section */}
-            <div className="max-w-screen-xl mx-auto grid gap-12 md:gap-16 items-center">
+            <div className="max-w-screen-xl mx-auto grid gap-12 md:gap-16 items-center mt-[3rem]">
                 <div className="space-y-8 flex flex-col items-center">
                     <h3 className="text-xl md:text-3xl font-serif text-center">トラベル事業</h3>
                     <div className="space-y-4 text-center">
@@ -59,19 +59,21 @@ export default function ServiceSection() {
                     </div>
 
                     <Image className="mx-auto" src="/travelsample.png" alt="" width={250} height={250} />
-                    <div className="text-2xl text-center font-serifs">2025年7月リリース予定</div>
+                    <div className="text-2xl text-center">
+                        <span className="font-arial">2025</span>年<span className="font-arial">7</span>月リリース予定
+                    </div>
                 </div>
             </div>
 
             {/* メディア事業 Section */}
-            <div className="max-w-screen-xl mx-auto space-y-6">
-                <h3 className="text-xl md:text-3xl font-serif text-center">メディア事業</h3>
-                <div className="space-y-4 text-center">
-                    <p className="text-base md:text-lg lg:text-xl leading-relaxed text-center font-serif">
-                        サウナ施設紹介メディア「ハマ｜サウナリーマン」を運営しています。（SNSフォロワー数2.3万人 ※2025年2月時点）
+            <div className="max-w-screen-xl mx-auto mt-[3rem]">
+                <h3 className="text-xl md:text-3xl text-center font-serif">メディア事業</h3>
+                <div className="space-y-4 text-center mt-[3rem]">
+                    <p className="text-base md:text-lg lg:text-xl leading-relaxed text-center">
+                        サウナ施設紹介メディア「ハマ｜サウナリーマン」を運営しています。（SNSフォロワー数<span className="font-arial">2.3</span>万人 ※<span className="font-arial">2025</span>年<span className="font-arial">2</span>月時点）
                     </p>
-                    <p className="text-base md:text-lg lg:text-xl leading-relaxed font-serif">
-                        他にも、TikTokやXにて、サウナ付き宿泊施設紹介のアカウントも運営しております。（SNS総フォロワー数4.2万人 ※2025年2月時点）
+                    <p className="text-base md:text-lg lg:text-xl leading-relaxed">
+                        他にも、TikTokやXにて、サウナ付き宿泊施設紹介のアカウントも運営しております。（SNS総フォロワー数<span className="font-arial">4.2</span>万人 ※<span className="font-arial">2025</span>年<span className="font-arial">2</span>月時点）
                     </p>
                 </div>
                 <ClientShowcase cards={medias} />
