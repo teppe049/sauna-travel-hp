@@ -38,7 +38,7 @@ const medias = [
 
 export default function ServiceSection() {
     return (
-        <section className="py-16 space-y-32 px-4 lg:px-40">
+        <section className="px-4 lg:px-40">
             <div className="max-w-screen-xl mx-auto space-y-2">
                 <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">Service</h2>
                 <p className="text-base md:text-lg lg:text-xl text-center  text-neutral-600 font-serif">事業内容</p>

@@ -108,7 +108,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section className="relative flex items-center justify-center text-white overflow-hidden py-[150px]">
+      <section className="relative flex items-center justify-center text-white overflow-hidden my-8 md:my-12 lg:my-16">
         <div className="px-4 lg:px-40">
           <div className="max-w-screen-xl mx-auto space-y-2">
             <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">Vison</h2>
@@ -145,13 +145,13 @@ export default function Home() {
         {/* <ProfileSection /> */}
       </section>
 
-      <section className="my-[100px] py-24">
+      <section className="my-8 md:my-12 lg:my-16">
         <CompanyInfo />
       </section>
 
 
 
-      <section className="my-[100px] py-24 bg-[#f5f9ffd9]">
+      <section className="py-16 my-8 md:my-12 lg:my-16 bg-[#f5f9ffd9]">
         <div>
           <div className="max-w-screen-xl mx-auto space-y-2 ">
             <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">Contuct</h2>
