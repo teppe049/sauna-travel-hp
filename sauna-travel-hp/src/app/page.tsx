@@ -91,10 +91,13 @@ export default function Home() {
     <>
       <section className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-br to-[#345BA2] from-[#345BA2]">
         <div className="text-center space-y-8">
-          {/* <p className="text-2xl font-serif font-light tracking-widest text-[#e0e5eb]">
-            <span className="animate-typing">熱を解きはなつ</span>
-          </p> */}
-          <Image src="/logo-9.png" alt="Sauna Travel" width={320} height={320} className="opacity-90 mt-4 responsive" />
+          <Image
+            src="/logo-9.png"
+            alt="Sauna Travel"
+            width={320}
+            height={320}
+            className="opacity-90 mt-4 w-[220px] sm:w-[280px] md:w-[320px] h-auto"
+          />
         </div>
       </section>
 
