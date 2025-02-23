@@ -14,7 +14,7 @@ interface CardPropatyProps {
 
 export default function ClientShowcase({ cards }: CardPropatyProps) {
     return (
-        <div className="px-4 lg:px-40 mx-auto pb-8 max-w-[1200px]"> {/* PC で余白が大きくならないように */}
+        <div className="px-4 lg:px-40 mx-auto pb-8 max-w-[1200px] mt-[3rem]"> {/* PC で余白が大きくならないように */}
             <div className="flex flex-wrap justify-center gap-6 md:flex-nowrap md:gap-8 w-full">
                 {cards.map((client, index) => (
                     <ClientCard
