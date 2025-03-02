@@ -26,7 +26,7 @@ export default function CompanyInfo() {
         <div className="py-16 px-4 lg:px-40">
             <div className="max-w-3xl mx-auto space-y-6">
                 <div className="space-y-2">
-                    <h2 className="text-neutral-950 font-bold text-3xl md:text-5xl text-center">About Us</h2>
+                    <h2 className="text-neutral-950 font-bold text-3xl md:text-5xl text-center font-serif">About Us</h2>
                     <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600">会社情報</p>
                 </div>
                 <div>
