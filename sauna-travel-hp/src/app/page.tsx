@@ -140,7 +140,7 @@ export default function Home() {
             さあ、あなたのところまで。<br />
             <br />
             <p className="text-neutral-900 font-bold font-serif text-xl md:text-2xl lg:text-3xl text-center ">熱を解きはなつ。</p>
-            <p className="font-bold font-serif text-4xl md:text-6xl lg:text-7xl text-center mb-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
+            <p className="font-bold font-serif text-4xl md:text-6xl lg:text-7xl text-center my-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
           </p>
         </div>
       </section>
