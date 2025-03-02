@@ -117,12 +117,12 @@ export default function Home() {
             <h2 className="text-neutral-950 font-bold font-serif text-3xl md:text-5xl text-center">Vison</h2>
             <p className="text-base md:text-lg lg:text-xl text-center text-neutral-600">私たちの展望</p>
           </div>
-          <p className="text-neutral-900 font-bold font-serif text-xl md:text-2xl lg:text-3xl text-center mt-[3rem]">熱を解きはなつ</p>
-          <p className="font-bold font-serif text-4xl md:text-6xl lg:text-7xl text-center mb-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
-          <p className="text-neutral-900 text-sm md:text-lg lg:text-xl font-serif text-center mt-2 mb-[2rem]">
+
+          <p className="text-neutral-900 text-sm md:text-lg lg:text-xl font-serif text-center my-[2rem]">
             人には熱が必要だ。<br />
             それはこの世界に存在する実感。<br />
-            意思や行動の原点。奇跡みたいな出会いをするための波長。<br />
+            意思や行動の原点。<br />
+            奇跡みたいな出会いをするための波長。<br />
             何かに夢中な人は、熱い。それがいつも、<br />
             世界をちょっとずつ変えてきた。<br />
             <br />
@@ -134,10 +134,13 @@ export default function Home() {
             サウナトラベルは、サウナを起点に、<br />
             世界中の熱と人をつなげます。<br />
             これまで熱を阻んできた、サウナと人を遠ざける壁も、<br />
-            言葉にできなかった小さなモヤモヤも、すべて取り払っていく。<br />
+            言葉にできなかった小さなモヤモヤも、<br />
+            すべて取り払っていく。<br />
             <br />
             さあ、あなたのところまで。<br />
             <br />
+            <p className="text-neutral-900 font-bold font-serif text-xl md:text-2xl lg:text-3xl text-center ">熱を解きはなつ。</p>
+            <p className="font-bold font-serif text-4xl md:text-6xl lg:text-7xl text-center mb-[2rem] text-[#345BA2]">Sauna Driven A to Z</p>
           </p>
         </div>
       </section>
@@ -163,7 +166,8 @@ export default function Home() {
 
           <div className="mt-10 space-y-4 text-center">
             <p className="text-base md:text-lg lg:text-xl leading-relaxed font-serif">
-              弊社へのお問い合わせはこちらよりお願いいたします。
+              弊社へのお問い合わせは<br />
+              こちらよりお願いいたします。
             </p>
             <p className="text-base md:text-lg lg:text-xl leading-relaxed font-serif">
               ２営業日以内にご返信させていただきます。
